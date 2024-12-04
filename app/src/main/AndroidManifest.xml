@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="tech.depthcore.ongoplayer" >
+
+  <application
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/application_name"
+    android:allowBackup="false"
+    android:largeHeap="true"
+    android:requestLegacyExternalStorage="true"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.AppCompat"
+    tools:targetApi="29">
+
+    <activity
+      android:configChanges="keyboardHidden"
+      android:exported="true"
+      android:label="@string/application_name"
+      android:name=".MediaChooserActivity"
+      android:screenOrientation="landscape"
+      android:theme="@style/Theme.AppCompat.NoActionBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+        android:configChanges="keyboardHidden"
+        android:exported="true"
+        android:label="@string/application_name"
+        android:name=".PlayerActivity"
+        android:screenOrientation="landscape"
+        android:theme="@style/PlayerTheme">
+      <intent-filter>
+        <action android:name="tech.depthcore.ongoplayer.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+
+    <activity
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+        android:exported="true"
+        android:label="@string/application_name"
+        android:name=".SettingsActivity"
+        android:screenOrientation="landscape"
+        android:theme="@style/PlayerTheme">
+      <intent-filter>
+        <action android:name="tech.depthcore.ongoplayer.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+  </application>
+
+  <uses-feature
+    android:name="android.software.leanback"
+    android:required="false" />
+  <uses-feature
+    android:name="android.hardware.touchscreen"
+    android:required="false" />
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+  <uses-sdk />
+
+</manifest>

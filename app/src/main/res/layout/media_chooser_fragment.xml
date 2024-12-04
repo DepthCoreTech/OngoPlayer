@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="2dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/ongo_file_chooser_header_background"
+        android:orientation="horizontal">
+        
+        <ImageButton
+            android:id="@+id/path_back_button"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/bg_general_button_selector"
+            android:src="@drawable/ongo_path_back"/>
+
+        <TextView
+            android:id="@+id/cur_path_name_textView"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="start"
+            android:maxLines="1"
+            android:paddingStart="12dp"
+            android:gravity="center_vertical"
+            android:text="the pathname of current"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ListView android:id="@+id/files_dirs_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:paddingTop="8dp"
+            android:fastScrollEnabled="false"
+            android:divider="@color/ongo_mainarea_background"
+            android:background="@color/ongo_mainarea_background"/>
+
+        <include layout="@layout/process_info_pane" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

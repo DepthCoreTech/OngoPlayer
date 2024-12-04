@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" tools:ignore="ExtraTranslation">
+
+    <string name="application_name">OngoPlayer</string>
+
+    <string name="ongo_media_source_name_apk">APK</string>
+    <string name="ongo_media_source_name_devices">Device</string>
+    <string name="ongo_media_source_name_baidu">Baidu Netdisk</string>
+    <string name="ongo_device_storage_folder_name">Device\'s Storage</string>
+    <string name="ongo_usb_storage_folder_name">USB Memory Stick</string>
+    <string name="ongo_dialog_positive_btn_text">OK</string>
+    <string name="ongo_dialog_Negative_btn_text">Cancel</string>
+    <string name="ongo_exit_confirmation">Really want to quit？</string>
+
+    <string name="ongo_information_loading">Loading...</string>
+    <string name="ongo_notification_close">Close</string>
+
+    <string name="ongo_settings_general">General</string>
+    <string name="ongo_settings_accounts">Accounts</string>
+    <string name="ongo_settings_tplay">TPlay</string>
+    <string name="ongo_settings_speakers">Speaker Array</string>
+    <string name="ongo_settings_baidu_user_signin">%s (%s)</string>
+    <string name="ongo_settings_baidu_user_signout">Not signed in</string>
+    <string name="ongo_settings_baidu_signout_button">Sign Out</string>
+    <string name="ongo_settings_general_version">Version: %s</string>
+    <string name="ongo_settings_general_copyright">DepthCoreTech, 2024</string>
+    <string name="ongo_settings_tplay_info">The following settings only take effect when TPlay is started</string>
+    <string name="ongo_settings_tplay_device_2chs_title">Device plays stereo sound:</string>
+    <string name="ongo_settings_tplay_device_2chs_deny">No sound can be heard from the device speaker.</string>
+    <string name="ongo_settings_tplay_device_2chs_pass">Device speakers play stereo sound synchronously.</string>
+    <string name="ongo_settings_tplay_device_6chs_title">Device plays 5.1 surround sound:</string>
+    <string name="ongo_settings_tplay_device_6chs_deny">No sound can be heard from the device speaker.</string>
+    <string name="ongo_settings_tplay_device_6chs_pass_clfe">The device speakers only play the C and LFE channels of the 5.1 surround sound simultaneously.</string>
+    <string name="ongo_settings_tplay_extspk_6chs_title">External Speakers play 5.1 surround sound:</string>
+    <string name="ongo_settings_tplay_extspk_6chs_none">Four Speakers play respective FR/FL/SL/SR channels.</string>
+    <string name="ongo_settings_tplay_extspk_6chs_clfe_flfr">The C and LFE channels will be mixed with the external speakers: FL/FR.</string>
+    <string name="ongo_settings_tplay_extspk_6chs_clfe_flfr_lfe_slsr">The C and LFE channels will be mixed with the external speakers: FL / FR, and LFE will be mixed with SL/SR.</string>
+    <string name="ongo_settings_tplay_extspk_6chs_lfe_flfrslsr">The LFE channel will be mixed with the external speakers: FL / FR / SL / SR.</string>
+
+
+    <string name="ongo_history_viewed">Viewed</string>
+    <string name="ongo_history_just_now">Just</string>
+    <string name="ongo_history_mintues_ago">Mins</string>
+    <string name="ongo_history_hours_ago">Hours</string>
+    <string name="ongo_history_days_ago">Days</string>
+    <string name="ongo_history_weeks_ago">Weaks</string>
+    <string name="ongo_history_months_ago">Mons</string>
+    <string name="ongo_history_years_ago">Years</string>
+    <string name="ongo_history_yesterday">Yday</string>
+    <string name="ongo_history_last_year">LY</string>
+
+
+    <string name="ongo_demos_in_apk_1">Counting Number (Audio-Video-Sync testing).mp4</string>
+    <string name="ongo_demos_in_apk_2">Dolby 5.1 Surround Test.mp4</string>
+    <string name="ongo_demos_in_apk_3">Radiohead - Creep (Stereo).mp4</string>
+    <string name="ongo_demos_in_apk_4">Tony vs Two F-22 Fighters in IRON MAN (Stereo).mp4</string>
+
+    <string name="atp_tplay_inactive_alert">Please start the TPlay service first.</string>
+    <string name="atp_tplay_getting_start">Select speaker location from the &lt;font color=\"#FFFFFF\"&gt;Speaker Array&lt;/font&gt; below.</string>
+    <string name="atp_tplay_position_speaker">Select the speaker in position &lt;font color=\"#FFFFFF\"&gt;%s&lt;/font&gt; from the &lt;font color=\"#FFFFFF\"&gt;Speaker List&lt;/font&gt; on the right.</string>
+    <string name="atp_tplay_assigned_speaker">Speaker &lt;font color=\"#FFFFFF\"&gt;%s&lt;/font&gt; is assigned to position &lt;font color=\"#FFFFFF\"&gt;%s&lt;/font&gt; .</string>
+    <string name="atp_tplay_position_free">Location &lt;font color=\"#FFFFFF\"&gt;%s&lt;/font&gt; is free.</string>
+
+    <string name="RESULT_CODE_ERROR_UNDEFINED">Unknow Error</string>
+    <string name="RESULT_CODE_ERROR_GENERAL_PLAYING_FAILURE">视频播放失败</string>
+    <string name="RESULT_CODE_ERROR_GENERAL_SYSTEM_FAILURE">系统错误</string>
+    <string name="RESULT_CODE_ERROR_GENERAL_USER_CANCELED">此次操作已被取消</string>
+    <string name="RESULT_CODE_ERROR_GENERAL_NETWORK">网络服务异常，请检查设备的网络设置是否正常</string>
+
+
+    <!-- player -->
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+    <string name="error_generic">Playback failed</string>
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+</resources>

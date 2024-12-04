@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ongo_mainarea_background"
+    android:orientation="vertical">
+
+    <!-- INFO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/settings_tplay_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/ongo_settings_tplay_info"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    <!-- ****INFO**** -->
+
+    <!-- Device 2CHS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_marginTop="6dp"
+            android:gravity="left"
+            android:maxLines="2"
+            android:text="@string/ongo_settings_tplay_device_2chs_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/settings_tplay_device_2chs_deny_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ongo_settings_tplay_device_2chs_deny"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <RadioButton
+                android:id="@+id/settings_tplay_device_2chs_pass_all_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ongo_settings_tplay_device_2chs_pass"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </RadioGroup>
+    </LinearLayout>
+    <!-- ****Device 2CHS**** -->
+
+    <!-- Device 6CHS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:gravity="left"
+            android:layout_marginTop="6dp"
+            android:maxLines="2"
+            android:text="@string/ongo_settings_tplay_device_6chs_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/settings_tplay_device_6chs_deny_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ongo_settings_tplay_device_6chs_deny"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <RadioButton
+                android:id="@+id/settings_tplay_device_6chs_pass_c_lfe_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ongo_settings_tplay_device_6chs_pass_clfe"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </RadioGroup>
+    </LinearLayout>
+    <!-- ****Device 6CHS**** -->
+
+    <!-- External 4SPKS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:gravity="left"
+            android:layout_marginTop="6dp"
+            android:maxLines="2"
+            android:text="@string/ongo_settings_tplay_extspk_6chs_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/settings_tplay_external_4spks_6chs_mixing_none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ongo_settings_tplay_extspk_6chs_none"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <RadioButton
+                android:id="@+id/settings_tplay_external_4spks_6chs_mixing_clef_flfr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ongo_settings_tplay_extspk_6chs_clfe_flfr"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <RadioButton
+                android:id="@+id/settings_tplay_external_4spks_6chs_mixing_clef_flfr_lfe_slsr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ongo_settings_tplay_extspk_6chs_clfe_flfr_lfe_slsr"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <RadioButton
+                android:id="@+id/settings_tplay_external_4spks_6chs_mixing_lfe_flfrslsr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ongo_settings_tplay_extspk_6chs_lfe_flfrslsr"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </RadioGroup>
+    </LinearLayout>
+    <!-- ****External 4SPKS**** -->
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="baidu_auth_usertype_desc">
+        <item>普通用户</item>
+        <item>普通会员</item>
+        <item>超级会员</item>
+    </string-array>
+</resources>

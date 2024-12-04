@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ongo_mainarea_background"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/atp_array_map_layout"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/atp_speaker_array_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Speaker Array"
+            android:textColor="@color/atp_guide_title"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/atp_speaker_array_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/atp_guide_info"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/atp_speaker_array_title" />
+
+        <ImageView
+            android:id="@+id/atp_audience_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.80"
+            app:layout_constraintWidth_percent="0.80"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5"
+            tools:srcCompat="@drawable/atp_audience" />
+
+        <LinearLayout
+            android:id="@+id/atp_speaker_l_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintCircle="@+id/atp_audience_imageView"
+            app:layout_constraintCircleAngle="315"
+            app:layout_constraintCircleRadius="150dp">
+
+            <ImageButton
+                android:id="@+id/atp_speaker_l_imageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:src="@drawable/atp_speaker_l" />
+
+            <TextView
+                android:id="@+id/atp_speaker_l_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="-Empty-"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/atp_speaker_r_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintCircle="@+id/atp_audience_imageView"
+            app:layout_constraintCircleAngle="45"
+            app:layout_constraintCircleRadius="150dp">
+
+            <ImageButton
+                android:id="@+id/atp_speaker_r_imageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:src="@drawable/atp_speaker_r" />
+
+            <TextView
+                android:id="@+id/atp_speaker_r_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="-Empty-"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/atp_speaker_sl_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintCircle="@+id/atp_audience_imageView"
+            app:layout_constraintCircleAngle="225"
+            app:layout_constraintCircleRadius="150dp">
+
+            <ImageButton
+                android:id="@+id/atp_speaker_sl_imageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:src="@drawable/atp_speaker_sl" />
+
+            <TextView
+                android:id="@+id/atp_speaker_sl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="-Empty-"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/atp_speaker_sr_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintCircle="@+id/atp_audience_imageView"
+            app:layout_constraintCircleAngle="135"
+            app:layout_constraintCircleRadius="150dp">
+
+            <ImageButton
+                android:id="@+id/atp_speaker_sr_imageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:src="@drawable/atp_speaker_sr" />
+
+            <TextView
+                android:id="@+id/atp_speaker_sr_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="-Empty-"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/apt_speaker_list_layout"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/atp_speaker_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speakers List"
+            android:textColor="@color/atp_guide_title"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <ListView android:id="@+id/atp_speaker_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/atp_transparent"/>
+    </LinearLayout>
+
+</LinearLayout>

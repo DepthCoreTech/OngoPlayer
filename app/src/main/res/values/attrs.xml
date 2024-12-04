@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DurationTextView">
+        <attr name="timelinePaddingTop" format="dimension"/>
+    </declare-styleable>
+
+</resources>

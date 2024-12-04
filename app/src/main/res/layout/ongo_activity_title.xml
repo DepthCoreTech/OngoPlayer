@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="35dp"
+  android:paddingStart="8dp"
+  android:paddingEnd="8dp"
+  android:background="@color/ongo_title_bar_background"
+  android:gravity="center_vertical"
+  android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/title_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/bg_general_button_selector"
+        android:src="@drawable/ongo_path_back"/>
+
+    <TextView
+        android:id="@+id/title_name_textView"
+        android:layout_weight="18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical"
+        android:text="@string/application_name"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ongo_settings"
+        android:scaleType="fitCenter"
+        android:background="@drawable/bg_general_button_selector"
+        />
+
+    <tech.depthcore.ongoplayer.TPlayButton
+        android:id="@+id/tplay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:focusable="true"
+        android:gravity="center"
+        />
+
+</LinearLayout>

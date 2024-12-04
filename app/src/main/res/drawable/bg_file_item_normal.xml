@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ongo_media_files_listitem_background_normal" />
+
+    <stroke android:width="1dp"
+            android:color="@color/ongo_media_files_listitem_border_normal" />
+
+    <corners android:radius="3dp" />
+</shape>
