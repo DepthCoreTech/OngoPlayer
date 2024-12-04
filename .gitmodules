@@ -1,0 +1,3 @@
+[submodule "ExoPlayer-OnGo"]
+	path = ExoPlayer-OnGo
+	url = https://github.com/DepthCoreTech/ExoPlayer-OnGo.git
